@@ -12,7 +12,7 @@ layout: landing
 يخلي الاختبار ينجح، وبعدين إعادة هيكلة (refactoring) بثقة. وطوال الفصول هتتعلم
 بالاختبارات كمان أدوات Go نفسها: الـ benchmark، وكاشف الـ race، وغيرهم.
 
-{{< button href="/learn-go-with-tests-ar/docs/" >}}ابدأ القراءة{{< /button >}}
+{{< button href="docs/" >}}ابدأ القراءة{{< /button >}}
 
 <br />
 <br />
