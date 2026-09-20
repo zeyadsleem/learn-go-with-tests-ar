@@ -1,0 +1,36 @@
+baseURL = 'https://zeyadsleem.github.io/learn-go-with-tests-ar/'
+title = 'تعلّم Go بالاختبارات'
+locale = 'ar'
+defaultContentLanguage = 'ar'
+enableGitInfo = true
+theme = 'hugo-book'
+
+[languages.ar]
+  label = 'العربية'
+  contentDir = 'content'
+  direction = 'rtl'
+  weight = 1
+
+[params]
+  BookTheme = 'auto'
+  BookSection = 'docs'
+  BookRepo = 'https://github.com/zeyadsleem/learn-go-with-tests-ar'
+  BookEditLink = '{{ .Site.Params.BookRepo }}/edit/main/{{ .Path }}'
+  BookLastChangeLink = '{{ .Site.Params.BookRepo }}/commit/{{ .GitInfo.Hash }}'
+  BookDateFormat = '2 January 2006'
+  BookSearch = true
+  BookToC = true
+  BookBreadcrumbs = true
+  BookPageLinks = true
+  copyright = 'ترجمة عربية لكتاب [Learn Go with Tests](https://github.com/quii/learn-go-with-tests) للمؤلف Chris James، بترخيص MIT.'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false

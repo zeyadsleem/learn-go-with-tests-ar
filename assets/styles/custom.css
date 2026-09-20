@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+html {
+  font-family: 'IBM Plex Sans Arabic', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-weight: 600;
+}
+
+.book-menu,
+.book-toc {
+  font-size: 0.95rem;
+}

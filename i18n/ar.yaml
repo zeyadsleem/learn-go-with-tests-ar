@@ -1,0 +1,11 @@
+- id: Search
+  translation: بحث
+
+- id: Edit this page
+  translation: عدّل هذه الصفحة
+
+- id: Last modified by
+  translation: آخر تعديل بواسطة
+
+- id: bookSearchConfig
+  translation: '{}'
