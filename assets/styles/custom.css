@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+:root {
+  --font-body: 'Noto Naskh Arabic', 'Noto Sans Arabic', system-ui, 'Segoe UI', Tahoma, sans-serif;
+  --font-ui: 'Noto Sans Arabic', 'Noto Naskh Arabic', system-ui, 'Segoe UI', Tahoma, sans-serif;
+}
 
 html {
-  font-family: 'IBM Plex Sans Arabic', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-ui);
+}
+
+.markdown {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.9;
 }
 
 .markdown h1,
@@ -10,10 +19,55 @@ html {
 .markdown h4,
 .markdown h5,
 .markdown h6 {
+  font-family: var(--font-ui);
   font-weight: 600;
+  line-height: 1.5;
+}
+
+.markdown pre,
+.markdown code {
+  font-size: 0.875em;
+}
+
+.markdown blockquote {
+  font-size: 1rem;
 }
 
 .book-menu,
 .book-toc {
+  font-family: var(--font-ui);
   font-size: 0.95rem;
+}
+
+.book-brand span {
+  font-weight: 600;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  position: fixed;
+  inset-inline-end: 1rem;
+  bottom: 1rem;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.7rem;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--body-font-color);
+  background: var(--body-background);
+  border: 1px solid var(--gray-200);
+  border-radius: 999px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.12);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--gray-500);
+}
+
+.theme-toggle svg {
+  width: 1rem;
+  height: 1rem;
 }

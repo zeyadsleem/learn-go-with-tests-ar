@@ -24,6 +24,7 @@ theme = 'hugo-book'
   BookBreadcrumbs = true
   BookPageLinks = true
   BookPortableLinks = 'warning'
+  BookServiceWorker = 'precache'
   copyright = 'ترجمة عربية لكتاب [Learn Go with Tests](https://github.com/quii/learn-go-with-tests) للمؤلف Chris James، بترخيص MIT.'
 
 [markup]

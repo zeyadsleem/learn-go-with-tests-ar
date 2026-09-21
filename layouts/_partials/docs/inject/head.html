@@ -1,0 +1,10 @@
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('book-theme');
+      if (saved) {
+        document.documentElement.dataset.theme = saved;
+      }
+    } catch (e) {}
+  })();
+</script>

@@ -1,0 +1,38 @@
+<button class="theme-toggle" id="theme-toggle" type="button" aria-live="polite"></button>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var button = document.getElementById('theme-toggle');
+    var states = ['auto', 'light', 'dark'];
+    var labels = { auto: 'الوضع: تلقائي', light: 'الوضع: فاتح', dark: 'الوضع: غامق' };
+    var icons = {
+      auto: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="8" cy="8" r="5.5"></circle><path d="M8 2.5v11" /></svg>',
+      light: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="8" cy="8" r="3.2"></circle><path d="M8 1v1.8M8 13.2V15M1 8h1.8M13.2 8H15M3 3l1.3 1.3M11.7 11.7 13 13M13 3l-1.3 1.3M4.3 11.7 3 13" /></svg>',
+      dark: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M13.5 9.6A6 6 0 0 1 6.4 2.5a6 6 0 1 0 7.1 7.1Z" /></svg>'
+    };
+
+    var current = 'auto';
+    try {
+      var saved = localStorage.getItem('book-theme');
+      if (states.indexOf(saved) !== -1) {
+        current = saved;
+      }
+    } catch (e) {}
+
+    function render() {
+      button.innerHTML = icons[current] + '<span>' + labels[current] + '</span>';
+      button.setAttribute('aria-label', labels[current] + '، اضغط للتبديل');
+    }
+
+    button.addEventListener('click', function () {
+      current = states[(states.indexOf(current) + 1) % states.length];
+      root.dataset.theme = current;
+      try {
+        localStorage.setItem('book-theme', current);
+      } catch (e) {}
+      render();
+    });
+
+    render();
+  })();
+</script>
