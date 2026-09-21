@@ -21,12 +21,12 @@
 
 الترجمة عمل مستمر. الفصول المتاحة حاليًا:
 
-- [تثبيت Go وتجهيز بيئة عمل منتجة](content/docs/install-go.md)
-- [مرحبًا بالعالم](content/docs/hello-world.md)
-- [الأعداد الصحيحة](content/docs/integers.md)
-- [التكرار](content/docs/iteration.md)
-- [المصفوفات والشرائح](content/docs/arrays-and-slices.md)
-- [Structs والـ Methods والـ Interfaces](content/docs/structs-methods-and-interfaces.md)
+- [تثبيت Go وتجهيز بيئة عمل منتجة](content/docs/go-fundamentals/install-go.md)
+- [مرحبًا بالعالم](content/docs/go-fundamentals/hello-world.md)
+- [الأعداد الصحيحة](content/docs/go-fundamentals/integers.md)
+- [التكرار](content/docs/go-fundamentals/iteration.md)
+- [المصفوفات والشرائح](content/docs/go-fundamentals/arrays-and-slices.md)
+- [Structs والـ Methods والـ Interfaces](content/docs/go-fundamentals/structs-methods-and-interfaces.md)
 
 ولمتابعة الجديد، ضع نجمة على المستودع أو تابع [الموقع](https://zeyadsleem.github.io/learn-go-with-tests-ar/).
 
