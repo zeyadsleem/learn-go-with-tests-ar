@@ -1,8 +1,10 @@
 # تعلّم Go بالاختبارات
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/quii/learn-go-with-tests/main/red-green-blue-gophers-smaller.png" />
+  <img src="static/images/red-green-blue-gophers-smaller.png" />
 </p>
+
+الرسم من [Denise](https://github.com/deniseyu)
 
 الترجمة العربية لكتاب [Learn Go with Tests](https://github.com/quii/learn-go-with-tests)
 للمؤلف [Chris James](https://github.com/quii).
