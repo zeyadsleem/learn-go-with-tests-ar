@@ -5,6 +5,12 @@ layout: landing
 
 # تعلّم Go بالاختبارات {anchor=false}
 
+<p align="center">
+  <img src="images/red-green-blue-gophers-smaller.png" alt="RED / GREEN / REFACTOR" width="400" />
+</p>
+
+<p align="center">الرسم من <a href="https://github.com/deniseyu">Denise</a></p>
+
 الترجمة العربية لكتاب [Learn Go with Tests](https://github.com/quii/learn-go-with-tests)
 للمؤلف [Chris James](https://github.com/quii).
 

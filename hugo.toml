@@ -14,6 +14,7 @@ theme = 'hugo-book'
 [params]
   BookTheme = 'auto'
   BookSection = 'docs'
+  BookLogo = 'images/gopher-icon.png'
   BookRepo = 'https://github.com/zeyadsleem/learn-go-with-tests-ar'
   BookEditLink = '{{ .Site.Params.BookRepo }}/edit/main/{{ .Path }}'
   BookLastChangeLink = '{{ .Site.Params.BookRepo }}/commit/{{ .GitInfo.Hash }}'
